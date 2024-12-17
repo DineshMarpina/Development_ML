@@ -2,10 +2,13 @@ import sys
 import pandas as pd
 import os
 
-sys.path.insert(0,'C:\\Users\\marpi\\Downloads\\AINEW\\ML_Production_code\\src')
-
-from exception import CustomException
-from utils import load_object
+#sys.path.insert(0,'C:\\Users\\marpi\\Downloads\\AINEW\\ML_Production_code\\src')
+#(For Local Host)
+#from exception import CustomException
+#from utils import load_object
+from src.exception import CustomException
+from src.logger import logging
+from src.utils import load_object
 
 
 class PredictPipeline:
