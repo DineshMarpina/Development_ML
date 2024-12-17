@@ -1,25 +1,32 @@
 import os
 import sys
-sys.path.insert(0,'C:\\Users\\marpi\\Downloads\\AINEW\\ML_Production_code\\src')
+#sys.path.insert(0,'C:\\Users\\marpi\\Downloads\\AINEW\\ML_Production_code\\src')
 
 #print(sys.path)
 
 from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
 
-from exception import CustomException
-from logger import logging
+#from exception import CustomException
+#from logger import logging
+
+from src.exception import CustomException
+from src.logger import logging
 
 import pandas as pd
 
 from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
 
-from data_transformation import DataTransformation
-from data_transformation import DataTransformationConfig
+#from data_transformation import DataTransformation
+#from data_transformation import DataTransformationConfig
 
-from model_trainer import ModelTrainerConfig
-from model_trainer import ModelTrainer
+#from model_trainer import ModelTrainerConfig
+#from model_trainer import ModelTrainer
+
+from src.components.data_transformation import DataTransformation, DataTransformationConfig
+from src.components.model_trainer import ModelTrainer, ModelTrainerConfig
+
 
 @dataclass
 class DataIngestionConfig:
