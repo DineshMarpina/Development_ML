@@ -14,10 +14,16 @@ from sklearn.neighbors import KNeighborsRegressor
 from sklearn.tree import DecisionTreeRegressor
 from xgboost import XGBRegressor
 
-from exception import CustomException
-from logger import logging
+#from exception import CustomException
+#from logger import logging
+#from utils import save_object,evaluate_models
+from src.exception import CustomException
+from src.logger import logging
+from src.utils import save_object
+from src.utils import evaluate_models
+from src.utils import print_evaluated_results
+from src.utils import model_metrics
 
-from utils import save_object,evaluate_models
 
 @dataclass
 class ModelTrainerConfig:
