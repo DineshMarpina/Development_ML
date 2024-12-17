@@ -21,8 +21,8 @@ from src.exception import CustomException
 from src.logger import logging
 from src.utils import save_object
 from src.utils import evaluate_models
-from src.utils import print_evaluated_results
-from src.utils import model_metrics
+#from src.utils import print_evaluated_results
+#from src.utils import model_metrics
 
 
 @dataclass
